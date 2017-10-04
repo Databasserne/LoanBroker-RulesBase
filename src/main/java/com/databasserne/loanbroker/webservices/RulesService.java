@@ -21,7 +21,6 @@ public class RulesService implements IRules {
     }
 
     public String getBanks(int creditScore, double amount, int months) {
-        System.out.println("Test");
         return gson.toJson(bankController.getBanks(creditScore, amount, months));
     }
 }

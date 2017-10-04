@@ -1,4 +1,6 @@
-package com.databasserne.loanbroker.controller;
+package com.databasserne.loanbroker.controller.banks;
+
+import com.databasserne.loanbroker.controller.IBank;
 
 public class BankJSON implements IBank {
 

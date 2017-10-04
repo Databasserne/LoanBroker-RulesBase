@@ -1,5 +1,8 @@
 package com.databasserne.loanbroker.controller;
 
+import com.databasserne.loanbroker.controller.banks.BankJSON;
+import com.databasserne.loanbroker.controller.banks.BankXML;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,6 +12,7 @@ public class BankController {
 
     public BankController() {
         banks.add(new BankJSON("BankJSON"));
+        banks.add(new BankXML("BankXML"));
     }
 
     public List<String> getBanks(int creditScore, double amount, int months) {
