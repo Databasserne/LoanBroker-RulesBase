@@ -20,6 +20,7 @@ public class RulesService implements IRules {
         this.bankController = new BankController();
     }
 
+    @Override
     public String getBanks(int creditScore, double amount, int months) {
         return gson.toJson(bankController.getBanks(creditScore, amount, months));
     }
