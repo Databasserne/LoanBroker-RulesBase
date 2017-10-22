@@ -11,6 +11,7 @@ public class BankNODE implements IBank {
     }
 
     public boolean isRequirementMet(int creditScore, double amount, int months) {
+        if(creditScore < 350) return false;
         return true;
     }
 

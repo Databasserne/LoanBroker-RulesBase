@@ -13,6 +13,8 @@ public class BankSOAP implements IBank {
     }
 
     public boolean isRequirementMet(int creditScore, double amount, int months) {
+        if(amount > 100000) return false;
+        if(creditScore < 100) return false;
         return true;
     }
 

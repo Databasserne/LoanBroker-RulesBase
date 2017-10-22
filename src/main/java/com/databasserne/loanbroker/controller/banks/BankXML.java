@@ -11,6 +11,9 @@ public class BankXML implements IBank {
     }
 
     public boolean isRequirementMet(int creditScore, double amount, int months) {
+        if(months > 50) return false;
+        if(creditScore < 600) return false;
+
         return true;
     }
 

@@ -11,6 +11,7 @@ public class BankJSON implements IBank {
     }
 
     public boolean isRequirementMet(int creditScore, double amount, int months) {
+        if(creditScore < 100) return false;
         return true;
     }
 
